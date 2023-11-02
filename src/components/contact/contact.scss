@@ -21,10 +21,10 @@
     gap: 40px;
 
     @include mobile {
-      gap: 20px;
+      gap: 10px;
       text-align: center;
       align-items: center;
-      margin-top: 70px;
+      margin-top: 10px;
     }
 
     h1 {
@@ -46,7 +46,7 @@
     position: relative;
     
     @include mobile {
-      padding: 50px;
+      padding: 5px;
       width: 100%;
     }
 
@@ -63,6 +63,9 @@
       flex-direction: column;
       gap: 20px;
 
+      @include mobile {
+        gap: 3px;
+      }
       input,
       textarea {
         padding: 20px;
@@ -72,7 +75,7 @@
         border-radius: 5px;
 
         @include mobile {
-          padding: 10px;
+          padding: 5px;
         }
       }
 
@@ -86,6 +89,28 @@
           padding: 10px;
         }
       }
+    }
+  }
+
+  .wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @include mobile{
+       display: none;
+    }
+
+    img{
+      width: 25px;
+      height: 25px;
+      object-fit: cover;
+
+      
+    }
+
+    .cardItem{
+       font-weight: bold;
     }
   }
 }

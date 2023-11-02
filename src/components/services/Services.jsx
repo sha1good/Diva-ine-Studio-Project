@@ -22,7 +22,7 @@ const variants = {
 const Services = () => {
   const ref = useRef();
 
-  const isInView = useInView(ref, { margin: "-100px" });
+  //const isInView = useInView(ref, { margin: "-100px" });
 
   return (
     <motion.div
@@ -60,7 +60,7 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Photography</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
             libero enim nisi aliquam consectetur expedita magni eius ex corrupti
@@ -73,7 +73,7 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Modeling</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
             libero enim nisi aliquam consectetur expedita magni eius ex corrupti
@@ -86,7 +86,7 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2>Podcasting</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
             libero enim nisi aliquam consectetur expedita magni eius ex corrupti
@@ -99,7 +99,7 @@ const Services = () => {
           className="box"
           whileHover={{ background: "lightgray", color: "black" }}
         >
-          <h2>Branding</h2>
+          <h2> Magazine Creation</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
             libero enim nisi aliquam consectetur expedita magni eius ex corrupti

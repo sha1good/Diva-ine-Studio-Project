@@ -31,14 +31,14 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_94y20xo",
-        "template_v10u2oh",
+        "service_i1v33k4",
+        "template_tee9n59",
         formRef.current,
-        "pX_2hasGmGcuvjXIW"
+        "kbJHsaPDYp9DYvgdT"
       )
       .then(
         (result) => {
-          setSuccess(true)
+          setSuccess(true);
         },
         (error) => {
           setError(true);
@@ -57,16 +57,24 @@ const Contact = () => {
       <motion.div className="textContainer" variants={variants}>
         <motion.h1 variants={variants}>Let’s work together</motion.h1>
         <motion.div className="item" variants={variants}>
-          <h2>Mail</h2>
-          <span>hello@react.dev</span>
+          <h2>E-Mail</h2>
+          <span>info.divaine@gmail.com</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Address</h2>
-          <span>Hello street New York</span>
+          <span>
+            24 Harris Ave, Brantford, ON N3R 2E9,
+            <br />
+            Ontario <br />
+            Canada.
+          </span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
-          <span>+1 234 5678</span>
+          <span>
+            +1 (548) 328-2232 <br />
+            +1 (437) 688-2228
+          </span>
         </motion.div>
       </motion.div>
       <div className="formContainer">
@@ -106,13 +114,34 @@ const Contact = () => {
           whileInView={{ opacity: 1 }}
           transition={{ delay: 4, duration: 1 }}
         >
-          <input type="text" required placeholder="Name" name="name"/>
-          <input type="email" required placeholder="Email" name="email"/>
-          <textarea rows={8} placeholder="Message" name="message"/>
+          <input type="text" required placeholder="Name" name="name" />
+          <input type="email" required placeholder="Email" name="email" />
+          <textarea rows={8} placeholder="Message" name="message" />
           <button>Submit</button>
           {error && "Error"}
           {success && "Success"}
         </motion.form>
+      </div>
+      <div className="right">
+        <div className="wrapper">
+          FOLLOW US <br />
+          <a href="https://www.facebook.com/">
+            <img src="/facebook.png" alt="" />
+          </a>
+          <a href="https://www.instagram.com/">
+            <img src="/instagram.png" alt="" />
+          </a>
+          <a href="https://youtube.com/">
+            <img src="/youtube.png" alt="" />
+          </a>
+          <a href="https://dribbble.com/">
+            <img src="/dribbble.png" alt="" />
+          </a>
+          <div className="cardItem">
+            © 2023 DIVA-INE STUDIO,
+            <br /> ALL RIGHTS RESERVED
+          </div>
+        </div>
       </div>
     </motion.div>
   );
