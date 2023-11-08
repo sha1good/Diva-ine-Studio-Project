@@ -1,0 +1,79 @@
+@import "../../app.scss";
+.container {
+  width: 200px;
+  cursor: pointer;
+  gap: 50px;
+  display: flex;
+  background: linear-gradient(180deg, #111132, #0c0c1d);
+  height: 200px;
+
+  &.even {
+    flex-direction: row-reverse;
+  }
+
+  img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+    flex: 1;
+
+    @include mobile {
+      height: 100px;
+     }
+  }
+
+  .details {
+    flex: 1;
+    display: flex;
+    gap: 12px;
+    padding: 0 10px;
+
+    @include mobile {
+      flex-direction: column;
+    }
+
+    .texts {
+      h1 {
+        font-size: 36px;
+        font-weight: bold;
+
+        @include mobile{
+           font-size: 20px;
+        }
+      }
+
+      h2 {
+        font-size: 30px;
+        font-weight: 500;
+        margin: 9px 0;
+        @include mobile {
+          display: none;
+          
+        }
+      }
+
+      .text {
+        font-size: 25px;
+        font-weight: 700;
+        @include mobile {
+          display: none;
+        }
+      }
+
+      button {
+        margin-top: 20px;
+        background-color: inherit;
+        color: white;
+        padding: 10px 20px;
+        border: 1px solid white;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 20px;
+
+        @include mobile {
+            margin-bottom: 10px;
+           }
+      }
+    }
+  }
+}

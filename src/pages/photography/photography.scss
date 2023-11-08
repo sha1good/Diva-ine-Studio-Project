@@ -1,0 +1,195 @@
+@import "../../app.scss";
+
+.photographyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+
+  @include mobile {
+    margin: 10px;
+  }
+}
+
+.photographyWrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.bookNow {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  background-color: #0071c2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+
+  @include mobile {
+    width: max-content;
+    padding: 5px;
+  }
+}
+
+.photographyTitle {
+  font-size: 24px;
+}
+
+.photographyAddress {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.photographyDistance {
+  color: #0071c2;
+  font-weight: 500;
+}
+
+.photographyPriceHighlihts {
+  color: #008009;
+  font-weight: 500;
+}
+
+.photographyImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.photographyImgWrapper {
+  width: 33%;
+}
+
+.photographyImg {
+  width: 100%;
+  object-fit: cover;
+}
+
+.photographyDetails {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 20px;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.photographyDetailText {
+  flex: 3;
+  @include mobile {
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+.photographyTitle {
+  font-size: 24px;
+}
+
+.photographyDesc {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.photographyDetailPrice {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include mobile {
+    margin: 10px;
+  }
+}
+
+.photographyDetailPrice > h1 {
+  font-size: 18px;
+  color: #333;
+}
+
+.photographyDetailPrice > span {
+  font-size: 14px;
+  color: #333;
+}
+
+.photographyDetailPrice > h2 {
+  font-weight: 300;
+  color: #333;
+}
+
+.photographyDetailPrice > button {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #0071c2;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.slider {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.613);
+}
+
+.sliderImgWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include mobile {
+    flex-wrap: wrap;
+  }
+}
+
+.sliderImg {
+  width: 80%;
+  height: 80vh;
+
+  @include mobile {
+    width: 45vh;
+    height: 50%;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  color: lightgray;
+}
+
+.arrow {
+  margin: 20px;
+  font-size: 50px;
+  color: lightgray;
+  cursor: pointer;
+
+  @include mobile {
+    font-size: 20px;
+    margin: 5px;
+  }
+}

@@ -1,0 +1,30 @@
+@import "../../app.scss";
+
+.container {
+  max-width: 1366px;
+  display: flex;
+  gap: 24px;
+  padding: 20px;
+  margin: auto;
+
+  .content {
+    flex: 10;
+
+    .contentWrapper {
+       
+      p {
+        font-size: 20px;
+        padding-bottom: 50px;
+
+        @include mobile{
+            width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+
+ 
+}

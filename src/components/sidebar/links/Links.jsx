@@ -24,14 +24,14 @@ const itemVariants = {
   },
 };
 
-const Links = () => {
+const Links = ({ page }) => {
   const items = ["Homepage","About", "Services", "Portfolio", "Contact",];
 
   return (
     <motion.div className="links" variants={variants}>
       {items.map((item) => (
         <motion.a
-          href={`#${item}`}
+          href= {page !== "home" ? `/`: `#${item}`}
           key={item}
           variants={itemVariants}
           whileHover={{ scale: 1.1 }}
