@@ -78,7 +78,7 @@ const Services = () => {
             animi! Ad nam pariatur assumenda quae mollitia libero repellat
             explicabo maiores?
           </p>
-          <button>Go</button>
+          <button><a href="#">Go</a></button>
         </motion.div>
         <motion.div
           className="box"
@@ -104,7 +104,7 @@ const Services = () => {
             animi! Ad nam pariatur assumenda quae mollitia libero repellat
             explicabo maiores?
           </p>
-          <button>Go</button>
+          <button><a href="#">Go</a></button>
         </motion.div>
       </motion.div>
     </motion.div>
