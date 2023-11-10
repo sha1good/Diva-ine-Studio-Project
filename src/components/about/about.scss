@@ -5,6 +5,7 @@
   height: calc(100vh - 100px);
   display: flex;
   background: linear-gradient(180deg, #111132, #0c0c1d);
+  padding: 30px;
 
   .wrapper {
     max-width: 1366px;
@@ -20,8 +21,8 @@
       }
 
       .imgContainer {
-        width: 700px;
-        height: 700px;
+        width: 600px;
+        height: 540px;
         border-radius: 50%;
         background-color: transparent;
         border: 2px solid white;
@@ -55,7 +56,7 @@
         }
 
         h2 {
-            margin: 50px 0;
+            margin: 20px 0;
             text-align: center;
             font-size: 100px;
       
@@ -66,7 +67,7 @@
           }
 
         p {
-          font-size: 30px;
+          font-size: 25px;
 
           @include mobile {
              font-size: 16px;

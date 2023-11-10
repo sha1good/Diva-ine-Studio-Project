@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 30px;
 
   .textContainer {
     flex: 1;
@@ -142,7 +143,7 @@
           border: 1px solid orange;
           border-radius: 5px;
           color: orange;
-          width: 50%;
+          width: 100px;
           padding: 5px;
         }
       }

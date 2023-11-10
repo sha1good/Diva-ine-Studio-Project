@@ -125,7 +125,7 @@ const Photography = () => {
               Lorem Ipsum is simply dummy text of the printing and typesetting industry ititi.!
               </span>
               <h2>
-                <b>$945</b> (10 nights)
+                <b>$945</b> (10 photos)
               </h2>
               <button>Hire Us Now!</button>
             </div>
